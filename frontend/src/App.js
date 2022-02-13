@@ -55,7 +55,7 @@ const App = () => {
                   key={index}
                   className="text-gray-300 flex items-center space-x-3 my-3"
                 >
-                  <div class="flex-shrink-0 h-10 w-10 bg-pink-600 text-base flex items-center justify-center font-semibold rounded-full shadow-xl">
+                  <div className="flex-shrink-0 h-10 w-10 bg-pink-600 text-base flex items-center justify-center font-semibold rounded-full shadow-xl">
                     {message.author[0]}
                   </div>
                   <div className="text-gray-300">
@@ -79,7 +79,7 @@ const App = () => {
         >
           <input
             type="text"
-            autocomplete="off"
+            autoComplete="off"
             value={body}
             className="w-full p-4 rounded-t-lg border-b text-sm focus:outline-none focus:shadow-outline"
             placeholder="Enter message..."
