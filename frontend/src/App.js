@@ -23,8 +23,10 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    socket.emit("send_message", { body, author });
-    setBody("");
+    if (body !== "") {
+      socket.emit("send_message", { body, author });
+      setBody("");
+    }
   };
 
   useEffect(() => {
